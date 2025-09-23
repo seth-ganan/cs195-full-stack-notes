@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--We get this link from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* 15 lines of custom CSS for a button */
+        .my-button {
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .my-button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            margin: 40px;
+        }
+        /* ...responsive styles, focus states, etc. */
+    </style>
+</head>
+<body>
+    <h2>Vanilla HTML and CSS:</h2>
+    <button class="my-button"">Click me!</button>
+    <p>Vanilla HTML and CSS take ~15-20 lines of code to style this button.</p>
+    <br>
+    <br>
+    <h2>With Bootstrap:</h2>
+    <button class="btn btn-primary">Click Me</button>
+    <p>Bootstrap makes this possible with one line of code.</p>
+</body>
+</html>

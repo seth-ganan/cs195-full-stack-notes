@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Wellness Check-in</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Iowa Impact Volleyball</h1>
+            <h2>Wellness Check-in</h2>
+        </header>
+
+        <form id="wellness-form">
+            <div class="form-group">
+                <label for="player-select">Select Player:</label>
+                <select id="player-select" required>
+                    <option value="">Choose a player...</option>
+                    <option value="Sarah Johnson">Sarah Johnson</option>
+                    <option value="Emma Wilson">Emma Wilson</option>
+                    <option value="Madison Taylor">Madison Taylor</option>
+                    <option value="Ashley Brown">Ashley Brown</option>
+                    <option value="Jessica Davis">Jessica Davis</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>🧠 Mental Wellness: </label>
+                <div class="explanation">
+                <p><em>How is your brain feeling today? </em></p> <br>
+                <p><strong>🟢 Green -- Ready to go</strong> focused, confident, excited for today</p>
+                <p><strong>🟡 Yellow -- Managing</strong> Some stress or distractions, but can push through</p>
+                <p><strong>🔴 Red -- Struggling</strong> Overwhelmed, anxious, or having trouble focusing</p>
+                </div>
+
+                <div class="status-buttons">
+                    <input type="radio" id="mental-red" name="mental" value="red" required>
+                    <label for="mental-red" class="status-btn red">🔴</label>
+                    
+                    <input type="radio" id="mental-yellow" name="mental" value="yellow">
+                    <label for="mental-yellow" class="status-btn yellow">🟡</label>
+                    
+                    <input type="radio" id="mental-green" name="mental" value="green">
+                    <label for="mental-green" class="status-btn green">🟢</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>💪 Physical Wellness:</label>
+                <div class="explanation">
+                    <p><em>How is your body feeling today?</em></p> <br>
+                    <p><strong>🟢 Green:</strong> Feeling strong, no pain, ready for full participation</p>
+                    <p><strong>🟡 Yellow:</strong> Minor issues: some soreness or fatigue, but can participate with modifications or breaks.</p>
+                    <p><strong>🔴 Red:</strong> Needs attention: significant pain, injury concern, or exhaustion</p>
+                </div>
+                
+                <div class="status-buttons">
+                    <input type="radio" id="physical-red" name="physical" value="red" required>
+                    <label for="physical-red" class="status-btn red">🔴</label>
+                    
+                    <input type="radio" id="physical-yellow" name="physical" value="yellow">
+                    <label for="physical-yellow" class="status-btn yellow">🟡</label>
+                    
+                    <input type="radio" id="physical-green" name="physical" value="green">
+                    <label for="physical-green" class="status-btn green">🟢</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit Check-in</button>
+        </form>
+
+        <div id="results">
+            <h3>Recent Check-ins</h3>
+            <div id="checkin-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

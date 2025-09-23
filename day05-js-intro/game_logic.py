@@ -4,7 +4,6 @@ def evaluate_guess(guess, answer):
     result = ["absent"] * len(answer)
     pool = list(answer)
 
-
     # Pass 1: exact matches
     for i in range(len(answer)):
         # Python - double equals for comparison
@@ -22,8 +21,6 @@ def evaluate_guess(guess, answer):
             pool[pool.index(guess[i])] = None
 
     return result
-
-
 
 def visualize(result):
     for i in range(len(result)): 

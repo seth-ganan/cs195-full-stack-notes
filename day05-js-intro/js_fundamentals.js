@@ -72,3 +72,4 @@ console.log([] === []);    // false (different objects in memory)
 console.log([] == []);     // false (same reason, but converted to primitives)
 console.log([] == "");     // true! (empty array converts to empty string)
 
+[]===[]
