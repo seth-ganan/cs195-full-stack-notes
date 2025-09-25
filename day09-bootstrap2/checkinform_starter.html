@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Check-In</title>
+  </head>
+  <body class="bg-light">
+    <!-- Better header with background and centering -->
+    <div class="bg-primary text-white text-center py-4 mb-4">
+      <h1 class="mb-0">🏐 Check-In</h1>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <!-- Card wrapper for professional look -->
+          <div class="card shadow">
+            <div class="card-body p-4">
+              <form id="checkinForm">
+                <!-- Form fields go here -->
+                <div class="mb-3">
+                  <!--Label -->
+                  <label for="age-group" class="form-label">
+                    <strong>Age Group:</strong>
+                  </label>
+                  <!-- Dropdown-->
+                  <select
+                    class="form-select"
+                    id="age-group"
+                    name="ageGroup"
+                    required
+                  >
+                    <option value="">Select your age group:</option>
+                    <option value="16">16s</option>
+                    <option value="17">17s</option>
+                    <option value="18">18s</option>
+                  </select>
+                </div>
+
+                <!-- Your code here for Team Select-->
+                <div class="mb-3">
+                  <p class="text-muted fst-italic">
+                    📝 Add team select dropdown here
+                  </p>
+                </div>
+
+                <!-- Your code here for Player Select-->
+                <div class="mb-3">
+                  <p class="text-muted fst-italic">
+                    📝 Add player name dropdown here
+                  </p>
+                </div>
+
+                <!-- Checkbox demo-->
+                <div class="mb-3">
+                  <label class="form-label mb-3">
+                    <strong>🌡️ How are you feeling?</strong>
+                  </label>
+
+                  <div class="form-check mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="red-angry"
+                      id="red-angry"
+                      name="emotions"
+                    />
+                    <label class="form-check-label" for="red-angry">
+                      🔴 <span class="text-danger fw-bold">Red:</span> angry,
+                      upset
+                    </label>
+                  </div>
+
+                  <!-- You'll build the rest! -->
+                  <div class="mt-3 p-3 bg-light border rounded">
+                    <p class="text-muted mb-0 fst-italic">
+                      📝 Add more emotion checkboxes here
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Add a submit button -->
+                <div class="d-grid mt-4">
+                  <button type="submit" class="btn btn-success btn-lg">
+                    ✅ Submit Check-In
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
