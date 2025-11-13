@@ -1,0 +1,26 @@
+{
+  "name": "day19-fullstack-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merriekay/cs195-full-stack-notes.git"
+  },
+  "author": "merriekay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merriekay/cs195-full-stack-notes/issues"
+  },
+  "homepage": "https://github.com/merriekay/cs195-full-stack-notes#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "mongoose": "^8.19.3"
+  }
+}

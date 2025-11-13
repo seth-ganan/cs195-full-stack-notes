@@ -28,6 +28,11 @@ app.get("/api/hello-name", (req, res) => {
   res.json({ message: `Hello, ${name}!` });
 });
 
+// GET /api/goodbye → { "message": "Goodbye!" }
+app.get("/api/goodbye", (req, res) => {
+  res.json({ message: "Goodbye!" });
+});
+
 // POST example (shows why express.json() matters)
 app.post("/api/echo", (req, res) => {
   res.status(201).json({ youSent: req.body });
